@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>RoutineLab Support</title>
+      <style>
+          * {
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+          }
+
+          body {
+              font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+              line-height: 1.6;
+              color: #333;
+              background-color: #f8f9fa;
+          }
+
+          .container {
+              max-width: 800px;
+              margin: 0 auto;
+              padding: 20px;
+          }
+
+          .header {
+              background: linear-gradient(135deg, #007AFF, #5856D6);
+              color: white;
+              text-align: center;
+              padding: 40px 20px;
+              border-radius: 12px;
+              margin-bottom: 30px;
+          }
+
+          .header h1 {
+              font-size: 2.5em;
+              margin-bottom: 10px;
+              font-weight: 700;
+          }
+
+          .header p {
+              font-size: 1.2em;
+              opacity: 0.9;
+          }
+
+          .support-card {
+              background: white;
+              border-radius: 12px;
+              padding: 30px;
+              margin-bottom: 20px;
+              box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+          }
+
+          .support-card h2 {
+              color: #007AFF;
+              margin-bottom: 20px;
+              font-size: 1.5em;
+              border-bottom: 2px solid #f0f0f0;
+              padding-bottom: 10px;
+          }
+
+          .contact-info {
+              background: #f8f9ff;
+              padding: 20px;
+              border-radius: 8px;
+              border-left: 4px solid #007AFF;
+              margin-bottom: 20px;
+          }
+
+          .contact-info h3 {
+              color: #007AFF;
+              margin-bottom: 10px;
+          }
+
+          .contact-info p {
+              margin-bottom: 8px;
+          }
+
+          .email-link {
+              color: #007AFF;
+              text-decoration: none;
+              font-weight: 500;
+          }
+
+          .email-link:hover {
+              text-decoration: underline;
+          }
+
+          .faq-item {
+              margin-bottom: 20px;
+              border: 1px solid #e9ecef;
+              border-radius: 8px;
+              overflow: hidden;
+          }
+
+          .faq-question {
+              background: #f8f9fa;
+              padding: 15px 20px;
+              font-weight: 600;
+              color: #495057;
+              cursor: pointer;
+              border: none;
+              width: 100%;
+              text-align: left;
+              font-size: 1em;
+          }
+
+          .faq-question:hover {
+              background: #e9ecef;
+          }
+
+          .faq-answer {
+              padding: 15px 20px;
+              background: white;
+              display: none;
+          }
+
+          .faq-answer.show {
+              display: block;
+          }
+
+          .feature-grid {
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+              gap: 20px;
+              margin-top: 20px;
+          }
+
+          .feature-item {
+              background: #f8f9ff;
+              padding: 20px;
+              border-radius: 8px;
+              text-align: center;
+          }
+
+          .feature-item h4 {
+              color: #007AFF;
+              margin-bottom: 10px;
+          }
+
+          .footer {
+              text-align: center;
+              padding: 30px;
+              color: #666;
+              border-top: 1px solid #e9ecef;
+              margin-top: 40px;
+          }
+
+          @media (max-width: 768px) {
+              .container {
+                  padding: 10px;
+              }
+
+              .header h1 {
+                  font-size: 2em;
+              }
+
+              .support-card {
+                  padding: 20px;
+              }
+          }
+      </style>
+  </head>
+  <body>
+      <div class="container">
+          <!-- Header -->
+          <div class="header">
+              <h1>🏋️ RoutineLab Support</h1>
+              <p>Your complete workout tracking companion</p>
+          </div>
+
+          <!-- Contact Information -->
+          <div class="support-card">
+              <h2>📧 Get Help</h2>
+              <div class="contact-info">
+                  <h3>Contact Support</h3>
+                  <p><strong>Email:</strong> <a href="mailto:support@routinelab.app?subject=RoutineLab Support Request" class="email-link">support@routinelab.app</a></p>
+                  <p><strong>Response Time:</strong> 24-48 hours</p>
+                  <p><strong>Version:</strong> Include your iOS version and device model when reporting issues</p>
+              </div>
+
+              <p>When contacting support, please include:</p>
+              <ul style="margin-left: 20px; margin-top: 10px;">
+                  <li>Your device model (iPhone 14, iPad Pro, etc.)</li>
+                  <li>iOS version (Settings → General → About)</li>
+                  <li>App version (Settings → About RoutineLab)</li>
+                  <li>Steps to reproduce any issues</li>
+              </ul>
+          </div>
+
+          <!-- FAQ Section -->
+          <div class="support-card">
+              <h2>❓ Frequently Asked Questions</h2>
+
+              <div class="faq-item">
+                  <button class="faq-question" onclick="toggleFAQ(this)">
+                      How do I sync my workouts across devices?
+                  </button>
+                  <div class="faq-answer">
+                      <p>To sync your data across all your devices:</p>
+                      <ol style="margin-left: 20px; margin-top: 10px;">
+                          <li>Open RoutineLab and go to <strong>Settings</strong></li>
+                          <li>Tap <strong>Sync & Data</strong></li>
+                          <li>Enable <strong>iCloud Sync</strong></li>
+                          <li>Make sure you're signed into the same iCloud account on all devices</li>
+                      </ol>
+                      <p style="margin-top: 10px;"><em>Note: Initial sync may take a few minutes depending on your data size.</em></p>
+                  </div>
+              </div>
+
+              <div class="faq-item">
+                  <button class="faq-question" onclick="toggleFAQ(this)">
+                      Can I use RoutineLab without an internet connection?
+                  </button>
+                  <div class="faq-answer">
+                      <p>Yes! RoutineLab works completely offline. You can:</p>
+                      <ul style="margin-left: 20px; margin-top: 10px;">
+                          <li>Log workouts and track progress</li>
+                          <li>Create and modify routines</li>
+                          <li>Record body measurements</li>
+                          <li>Use all calculators and tools</li>
+                      </ul>
+                      <p style="margin-top: 10px;">Your data will automatically sync to iCloud when you reconnect to the internet.</p>
+                  </div>
+              </div>
+
+              <div class="faq-item">
+                  <button class="faq-question" onclick="toggleFAQ(this)">
+                      How do I enable RPE (Rate of Perceived Exertion) tracking?
+                  </button>
+                  <div class="faq-answer">
+                      <p>To show RPE buttons in your workouts:</p>
+                      <ol style="margin-left: 20px; margin-top: 10px;">
+                          <li>Go to <strong>Settings</strong></li>
+                          <li>Tap <strong>Workout Settings</strong></li>
+                          <li>Enable <strong>Show RPE</strong></li>
+                      </ol>
+                      <p style="margin-top: 10px;"><em>Note: RPE buttons will always appear for AMRAP and Cluster sets, regardless of this setting.</em></p>
+                  </div>
+              </div>
+
+              <div class="faq-item">
+                  <button class="faq-question" onclick="toggleFAQ(this)">
+                      My data isn't syncing. What should I do?
+                  </button>
+                  <div class="faq-answer">
+                      <p>Try these troubleshooting steps:</p>
+                      <ol style="margin-left: 20px; margin-top: 10px;">
+                          <li>Check that you're signed into iCloud (Settings → [Your Name])</li>
+                          <li>Verify iCloud Sync is enabled in RoutineLab settings</li>
+                          <li>Ensure you have a stable internet connection</li>
+                          <li>Force close and reopen RoutineLab</li>
+                          <li>Restart your device if the issue persists</li>
+                      </ol>
+                      <p style="margin-top: 10px;">If problems continue, contact support with your device and iOS version.</p>
+                  </div>
+              </div>
+
+              <div class="faq-item">
+                  <button class="faq-question" onclick="toggleFAQ(this)">
+                      How do I export my workout data?
+                  </button>
+                  <div class="faq-answer">
+                      <p>Currently, data export is handled through iCloud sync. All your workout data, routines, and body measurements are automatically backed up to your iCloud account.</p>
+                      <p style="margin-top: 10px;">For specific export requests or data portability, please contact our support team.</p>
+                  </div>
+              </div>
+
+              <div class="faq-item">
+                  <button class="faq-question" onclick="toggleFAQ(this)">
+                      Is my data private and secure?
+                  </button>
+                  <div class="faq-answer">
+                      <p>Your privacy is our priority:</p>
+                      <ul style="margin-left: 20px; margin-top: 10px;">
+                          <li>All data is stored in your private iCloud account</li>
+                          <li>We cannot access your personal workout data</li>
+                          <li>Data is encrypted in transit and at rest</li>
+                          <li>No data is shared with third parties</li>
+                      </ul>
+                      <p style="margin-top: 10px;">Read our full <a href="privacy.html" class="email-link">Privacy Policy</a> for more details.</p>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Features Overview -->
+          <div class="support-card">
+              <h2>✨ What RoutineLab Can Do</h2>
+              <div class="feature-grid">
+                  <div class="feature-item">
+                      <h4>🏋️ Workout Tracking</h4>
+                      <p>Log exercises with multiple set types, RPE, and rest timers</p>
+                  </div>
+                  <div class="feature-item">
+                      <h4>📊 Progress Analytics</h4>
+                      <p>Track personal records and visualize strength gains</p>
+                  </div>
+                  <div class="feature-item">
+                      <h4>📋 Routine Builder</h4>
+                      <p>Create custom workout programs and templates</p>
+                  </div>
+                  <div class="feature-item">
+                      <h4>📏 Body Tracking</h4>
+                      <p>Monitor weight and body measurements over time</p>
+                  </div>
+                  <div class="feature-item">
+                      <h4>🧮 Training Tools</h4>
+                      <p>Plate calculator, 1RM estimator, and more</p>
+                  </div>
+                  <div class="feature-item">
+                      <h4>☁️ iCloud Sync</h4>
+                      <p>Seamless data backup and multi-device sync</p>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Footer -->
+          <div class="footer">
+              <p>&copy; 2024 RoutineLab. All rights reserved.</p>
+              <p><a href="privacy.html" class="email-link">Privacy Policy</a> | <a href="terms.html" class="email-link">Terms of Service</a></p>
+          </div>
+      </div>
+
+      <script>
+          function toggleFAQ(button) {
+              const answer = button.nextElementSibling;
+              const isOpen = answer.classList.contains('show');
+
+              // Close all FAQ answers
+              document.querySelectorAll('.faq-answer').forEach(el => {
+                  el.classList.remove('show');
+              });
+
+              // Open clicked answer if it wasn't already open
+              if (!isOpen) {
+                  answer.classList.add('show');
+              }
+          }
+      </script>
+  </body>
+  </html>
